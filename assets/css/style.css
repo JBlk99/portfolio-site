@@ -60,6 +60,42 @@ button {
     border: none;
 }
 
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
 
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
 
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
 
+nav div a {
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.0625rem;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-weight: 300;
+    padding: 5px 10px;
+    background-color: #D1000066;
+}
+
+.navbar-right a {
+    margin: 0 50px;
+}
