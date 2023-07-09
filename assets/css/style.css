@@ -16,7 +16,8 @@ h2,
 h3,
 button,
 a,
-.footer-text {
+.footer-text,
+label {
     font-family: "Roboto Slab";
     color: #FFDFDF;
     text-transform: capitalize;
@@ -210,6 +211,49 @@ footer {
     color: #FFDFDF;
 }
 
-.footer-right > a {
+.footer-right>a {
     margin: 0 10px;
 }
+
+/* COntact page */
+
+#contact{
+    justify-content: space-around;
+    height: 75vh;
+}
+
+#contact > h1 {
+    align-self: flex-start;
+}
+.contact-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    min-width: 100%
+}
+
+.contact-form{
+    flex: 1;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #D1000066;
+    border-radius: 4px;
+    background-color: #D9D9D9;
+    color: #160000;
+    font-family: "Roboto Flex";
+
+}
+
