@@ -15,7 +15,8 @@ h1,
 h2,
 h3,
 button,
-a {
+a,
+.footer-text {
     font-family: "Roboto Slab";
     color: #FFDFDF;
     text-transform: capitalize;
@@ -47,7 +48,7 @@ P {
 
 }
 
-button{
+button {
     width: 7.5rem;
     height: 3.125rem;
     flex-shrink: 0;
@@ -60,7 +61,7 @@ button{
     border: none;
 }
 
-.button{
+.button {
     text-decoration: none;
     background: #D1000066;
     width: 7.5rem;
@@ -187,6 +188,28 @@ nav div a {
     margin: 30px;
 }
 
-.buttons-container > a {
+.buttons-container>a {
     margin: 20px 10px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.footer-left>p {
+    padding: 5px;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #FFDFDF;
+}
+
+.footer-right > a {
+    margin: 0 10px;
 }
