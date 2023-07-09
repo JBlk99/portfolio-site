@@ -60,6 +60,13 @@ button {
     border: none;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    border-bottom: #D1000066 1px solid;
+}
+
 /* Navigation */
 .navbar {
     display: flex;
@@ -98,4 +105,15 @@ nav div a {
 
 .navbar-right a {
     margin: 0 50px;
+}
+
+/* Welcome Section */
+
+#welcome{
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#welcome > *{
+margin: 30px 0;
 }
