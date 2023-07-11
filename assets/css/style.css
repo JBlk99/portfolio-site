@@ -7,7 +7,7 @@
 
 body {
     background-color: #3A3A3A;
-    padding: 100px 100px 0px;
+    padding: 100px 30px 0px;
 
 }
 
@@ -73,8 +73,8 @@ button {
 section {
     display: flex;
     flex-direction: column;
-    height: 90vh;
     border-bottom: #D1000066 1px solid;
+    height: 90vh;
 }
 
 section>h2 {
@@ -202,39 +202,38 @@ footer {
     margin: 20px;
 }
 
-.footer-left>p {
-    padding: 5px;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    color: #FFDFDF;
-}
+
 
 .footer-right>a {
     margin: 0 10px;
 }
 
-/* COntact page */
+address>a {
+    text-transform: lowercase;
+}
 
-#contact{
+/* Contact page */
+
+#contact {
     justify-content: space-around;
     height: 75vh;
 }
 
-#contact > h1 {
+#contact>h1 {
     align-self: flex-start;
 }
-.contact-container{
+
+.contact-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     min-width: 100%
 }
 
-.contact-form{
+.contact-form {
     flex: 1;
 }
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -257,3 +256,79 @@ textarea {
 
 }
 
+/* Media queries */
+
+@media only screen and (max-width: 1220px) {
+    section {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        padding: 100px 100px 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 6.25rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .bio-image img {
+        width: 200px;
+    }
+
+    section {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bio-container {
+        flex-direction: column;
+    }
+
+    .project-card > img{
+        max-width: 250px;
+    }
+
+    .navbar {
+        padding:20px;
+    }
+
+    .navbar-right  a{
+        margin: 0px 10px;
+        font-size: 1.1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+        padding-right: 0px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    footer {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .footer-right {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
